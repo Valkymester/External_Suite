@@ -16,13 +16,13 @@ int main()
 	while (1)
 	{
 		engine.i_Count = 1;
-		if ((GetAsyncKeyState(VK_LBUTTON))) {
+		if (GetAsyncKeyState(VK_LBUTTON) & 1) {
 			engine.aiAddonOn = true;
 		}
 		else
 			engine.aiAddonOn = false;
 
-		if ((GetAsyncKeyState(VK_XBUTTON1))) {
+		if (GetAsyncKeyState(VK_XBUTTON1) & 1) {
 			engine.trAddonOn = true;
 		}
 		else
